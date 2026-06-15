@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: twitch-giveaway-pro
+    name: otmivdeneg
     runtime: node
     plan: free
     buildCommand: npm ci
