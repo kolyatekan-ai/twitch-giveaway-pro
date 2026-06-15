@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>TwitchGiveaway Pro</title>
+<title>OtmivDeneg — Колесо Фортуны и Розыгрыши</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
@@ -213,7 +213,7 @@ html,body{height:100%;font-family:'Inter',sans-serif;background:var(--bg);color:
 
 <!-- ===== SIDEBAR ===== -->
 <nav class="sidebar">
-    <div class="side-logo" title="TwitchGiveaway Pro">
+    <div class="side-logo" title="OtmivDeneg">
         <svg viewBox="0 0 24 24"><path d="M4 2h16a2 2 0 012 2v12a2 2 0 01-2 2H7l-5 4V4a2 2 0 012-2zm14 3l-3 3h-2l-1 2v2l-2 2h-2l-2 2v2l-1 1h-2l-2-2V9l2-2h2l1-2h4l3-2z"/></svg>
     </div>
     <div class="side-items">
@@ -247,7 +247,7 @@ html,body{height:100%;font-family:'Inter',sans-serif;background:var(--bg);color:
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
             <span class="tooltip">Антибот</span>
         </div>
-        <div class="side-item" onclick="window.open('https://github.com/kolyatekan-ai/twitch-giveaway-pro','_blank')">
+        <div class="side-item" onclick="window.open('https://otmivdeneg.com','_blank')">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 015.83 1c0 2-3 3-3 3m.08 4h.01"/></svg>
             <span class="tooltip">Помощь</span>
         </div>
@@ -678,7 +678,7 @@ function tg(el){el.classList.toggle('on');}
 
 // ===== TWITCH AUTH =====
 const TWITCH_CLIENT_ID = 'YOUR_TWITCH_CLIENT_ID';
-const REDIRECT_URI = window.location.origin + window.location.pathname;
+const REDIRECT_URI = 'https://otmivdeneg.com';
 
 function handleAuth() {
     if (APP.user) { APP.user = null; renderUser(); return; }
